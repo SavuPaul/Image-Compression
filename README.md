@@ -13,7 +13,7 @@ This program processes `.PPM` image files and performs specific compression task
 
 In Task 1, the program reads data from a `.PPM` file and stores it in a `Matrix` variable, which contains fields for red, green, and blue values. Each node in the quadtree has three fields: `line`, `column`, and `size`, allowing easy mapping between a node's position in the tree and its corresponding pixel area.
 
-The function `matrix_score` checks if the mean value for a given submatrix is less than or equal to the compression factor. The process proceeds as follows:
+The function `matrix_score` checks if the mean value for a given submatrix is less than or equal to the compression factor. The process is as follows:
 
 1. **Initial Matrix Score Check**: If the score of the entire matrix is greater than the compression factor, the matrix is not divided further, and the required data is written to the output file.
 
